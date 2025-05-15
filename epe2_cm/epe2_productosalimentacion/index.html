@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Productos de Alimentación</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Lista de Productos de Alimentación</h1>
+
+  <div class="filtros">
+    <select id="filtroProveedor">
+      <option value="">-- Proveedor --</option>
+    </select>
+
+    <select id="filtroCategoria">
+      <option value="">-- Categoría --</option>
+    </select>
+
+    <button onclick="filtrarProductos()">Filtrar</button>
+  </div>
+
+  <table id="tablaProductos">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Producto</th>
+        <th>Proveedor</th>
+        <th>Categoría</th>
+        <th>Precio</th>
+        <th>Stock</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
